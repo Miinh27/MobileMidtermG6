@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f0d1aa">
+
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFA500"
         android:gravity="center"
-        android:text="Your Favorite List:"
+        android:padding="16dp"
+        android:text="Your Favorite List"
+        android:textColor="#333333"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:padding="16dp" />
+        android:textStyle="bold"/>
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:clipToPadding="false"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp"
+        android:padding="10dp"/>
+
+
 </RelativeLayout>
